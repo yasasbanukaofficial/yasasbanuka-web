@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './Welcome.css';
-import Hero from '@/app/components/organisms/hero'
+import Hero from '@/app/components/organisms/Hero'
 
 
 const Welcome = () => {

@@ -1,0 +1,26 @@
+#navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 3.2vh;
+    font-weight: 600;
+    font-style: normal;
+    gap: 4.8vw;
+    width: 65vw;
+    height: 3.7vh;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.navbar-links {
+    color: #C6C6C6;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar-links:hover {
+    color: white;
+}

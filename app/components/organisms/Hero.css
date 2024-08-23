@@ -1,5 +1,6 @@
-.hero {
+#hero {
     text-align: center;
+    margin-top: 225px;
 }
 
 #main-logo {
@@ -18,4 +19,10 @@
     font-family: "Barlow Condensed", sans-serif;
     font-weight: 600;
     font-style: normal;
+}
+
+.hero-description:hover {
+    color: white;
+    cursor: context-menu;
+    ;
 }
