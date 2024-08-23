@@ -11,6 +11,10 @@ const hero = () => {
                 alt='yasasbanuka-logo'
                 id='main-logo'
             />
+            <h3 className='hero-description'>
+                Crafting things on the web, with a love for solving puzzles and building ideas.
+                Take a peek at what I’m up to! 💀‼️
+            </h3>
         </div>
     )
 }

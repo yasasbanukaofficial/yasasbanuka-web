@@ -1,5 +1,21 @@
+.hero {
+    text-align: center;
+}
+
 #main-logo {
     margin: 0 auto;
     width: 295px;
-    height: 295px;
+    height: 90px;
+    object-fit: cover;
+}
+
+.hero-description {
+    color: #C6C6C6;
+    width: 85vw;
+    text-align: center;
+    margin: 0 auto;
+    font-size: 3vh;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
 }
