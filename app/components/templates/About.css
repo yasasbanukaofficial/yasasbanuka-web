@@ -1,5 +1,24 @@
-.about-bgimg {
+.fade-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
     width: 100vw;
+    background: #000;
+}
+
+.fade-in-image {
+    width: 100%;
     height: 100%;
-    opacity: 50%;
+    max-height: 112vh;
+    max-height: 100%;
+    opacity: 0;
+    transition: opacity 3s ease;
+    object-fit: cover;
+}
+
+.fade-in-image.visible {
+    opacity: 0.5;
 }

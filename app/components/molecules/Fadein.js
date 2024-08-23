@@ -1,8 +1,8 @@
 'use client'
 import { useEffect, useRef, useState } from 'react';
-import '@/app/components/templates/About.css';
+import '@/app/components/molecules/fadeInImage.css'; // Import normal CSS
 
-const About = () => {
+const FadeInImage = () => {
     const [isVisible, setIsVisible] = useState(false);
     const imageRef = useRef(null);
 
@@ -11,11 +11,11 @@ const About = () => {
             ([entry]) => {
                 if (entry.isIntersecting) {
                     setIsVisible(true);
-                    observer.unobserve(entry.target);
+                    observer.unobserve(entry.target); // Stop observing once in view
                 }
             },
             {
-                threshold: 0.1,
+                threshold: 0.1, // Adjust threshold as needed
             }
         );
 
@@ -42,4 +42,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default FadeInImage;

@@ -1,0 +1,25 @@
+/* Container that allows scrolling */
+.fade-container {
+    height: 150vh;
+    /* Ensure the container is tall enough to enable scrolling */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Image styles */
+.fade-in-image {
+    width: 50vw;
+    height: 50%;
+    opacity: 0;
+    /* Start fully transparent */
+    transition: opacity 1s ease;
+    /* Smooth transition for opacity */
+}
+
+/* Apply the fade-in effect */
+.fade-in-image.visible {
+    opacity: 1;
+    /* Fully visible when in viewport */
+}
