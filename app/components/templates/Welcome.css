@@ -23,3 +23,38 @@
     text-align: center;
     padding: 20px;
 }
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 22%;
+}
+
+.mouse-icon {
+    width: auto;
+    height: 6vh;
+}
+
+.down-icon {
+    width: auto;
+    height: 4vh;
+    animation: slideDown 2s ease-in-out infinite;
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-20px);
+        /* Start above */
+    }
+
+    50% {
+        transform: translateY(10px);
+        /* Move to below the visible area */
+    }
+
+    100% {
+        transform: translateY(-20px);
+        /* Return to start */
+    }
+}
