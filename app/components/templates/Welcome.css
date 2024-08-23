@@ -14,13 +14,11 @@
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: -1;
-    /* Behind the content */
 }
 
-.content {
+.main-content {
     position: relative;
     z-index: 10;
-    /* Ensure it's on top of the video */
     color: white;
     text-align: center;
     padding: 20px;
