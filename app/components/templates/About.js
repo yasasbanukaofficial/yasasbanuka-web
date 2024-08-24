@@ -33,7 +33,7 @@ const About = () => {
     return (
         <div className="fade-container">
             <img
-                src="/about-bgimg.jpg"
+                src="/demonslayergif.gif"
                 alt="Fade-in Image"
                 className={`fade-in-image ${isVisible ? 'visible' : ''}`}
                 ref={imageRef}

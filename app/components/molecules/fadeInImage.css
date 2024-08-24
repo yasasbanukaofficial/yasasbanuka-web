@@ -23,10 +23,3 @@
     opacity: 1;
     /* Fully visible when in viewport */
 }
-
-@media only screen and (max-width : 420px) {
-    .fade-in-image.visible {
-        width: 100vmax;
-        margin-right: 220px;
-    }
-}
