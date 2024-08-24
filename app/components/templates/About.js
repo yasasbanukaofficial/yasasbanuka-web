@@ -38,6 +38,9 @@ const About = () => {
                 className={`fade-in-image ${isVisible ? 'visible' : ''}`}
                 ref={imageRef}
             />
+            <div className='content'>
+                <h11>Paper</h11>
+            </div>
         </div>
     );
 };

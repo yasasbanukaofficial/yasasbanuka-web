@@ -17,6 +17,10 @@
     opacity: 0;
     transition: opacity 3s ease;
     object-fit: cover;
+    z-index: 1;
+    top: 0px;
+    left: 0px;
+    position: absolute;
 }
 
 .fade-in-image.visible {
