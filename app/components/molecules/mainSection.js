@@ -1,10 +1,12 @@
 import React from 'react';
-import '@/app/components/molecules/mainSection.css'
+import ReactDOM from 'react-dom/client';
+import '@/app/components/molecules/MainSection.css'
 
-const mainSection = (input) => {
+const mainSection = (props) => {
     return (
         <div>
-            <h1>{input.title}</h1>
+            <h1>{props.title}</h1>
+            <h3>{props.description}</h3>
         </div>
     )
 }

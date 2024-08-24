@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from 'react';
 import '@/app/components/templates/About.css';
-
+import MainSection from '../molecules/MainSection';
 const About = () => {
     const [isVisible, setIsVisible] = useState(false);
     const imageRef = useRef(null);
@@ -38,8 +38,9 @@ const About = () => {
                 className={`fade-in-image ${isVisible ? 'visible' : ''}`}
                 ref={imageRef}
             />
-            <div className='content'>
-                <h11>Paper</h11>
+            <div className='about-content'>
+                <MainSection title='About Me' />
+                <MainSection description='Lorem Ipsum malli mata therenne na me magula poddak hadaganna one dan dawas dekak wenawa meka hadanna patan aragena ah na sorry dawasai wage' />
             </div>
         </div>
     );
