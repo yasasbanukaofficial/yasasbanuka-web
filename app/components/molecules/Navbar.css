@@ -24,3 +24,10 @@
 .navbar-links:hover {
     color: white;
 }
+
+
+@media only screen and (max-width : 420px) {
+    #navbar {
+        font-size: 2.7vh;
+    }
+}
