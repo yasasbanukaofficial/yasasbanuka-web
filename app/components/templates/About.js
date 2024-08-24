@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import '@/app/components/templates/About.css';
 import MainSection from '../molecules/MainSection';
+
 const About = () => {
     const [isVisible, setIsVisible] = useState(false);
     const imageRef = useRef(null);
@@ -40,7 +41,7 @@ const About = () => {
             />
             <div className='about-content'>
                 <MainSection title='About Me' />
-                <MainSection description='Lorem Ipsum malli mata therenne na me magula poddak hadaganna one dan dawas dekak wenawa meka hadanna patan aragena ah na sorry dawasai wage' />
+                <MainSection description='Hi, I’m Yasas Banuka. As a student, I am currently studying Computer Science. I also have a passion to discover various paths on how to interact with technology' />
             </div>
         </div>
     );

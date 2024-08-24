@@ -1,0 +1,41 @@
+#card1 {
+    width: 40vw;
+    margin-right: 36vw;
+}
+
+.title {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 9vh;
+    width: 33vh;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.description {
+    font-family: "Barlow Condensed", sans-serif;
+    font-size: 5vh;
+    font-weight: 500;
+    font-style: normal;
+}
+
+@media only screen and (max-width : 820px) {
+    #card1 {
+        width: 50vw;
+        margin-right: 10vw;
+    }
+
+    .title {
+        font-size: 8vh;
+    }
+
+    .description {
+        width: 60vw;
+        font-size: 4vh;
+    }
+}
+
+@media only screen and (max-width : 380px) {
+    .description {
+        font-size: 5vh;
+    }
+}
