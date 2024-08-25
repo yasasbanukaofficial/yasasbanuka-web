@@ -51,8 +51,12 @@
     }
 }
 
-@media only screen and (max-width : 380px) {
+@media only screen and (max-width : 430px) {
+    #card1 {
+        padding: 0.5vh;
+    }
+
     .description {
-        font-size: 5vh;
+        font-size: 3.8vh;
     }
 }

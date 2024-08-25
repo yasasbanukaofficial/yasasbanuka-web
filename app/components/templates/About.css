@@ -38,7 +38,7 @@
     z-index: 2;
     width: 50vh;
     border-radius: 40px;
-    opacity: 0.4;
+    opacity: 0.9;
     position: relative;
 }
 
@@ -47,11 +47,17 @@
         width: 40vh;
     }
 
+
+
 }
 
 @media only screen and (max-width: 840px) {
     .about-content {
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 10vh;
     }
 
     .fade-container {
@@ -64,7 +70,19 @@
     }
 }
 
-@media only screen and (max-width : 420px) {
+@media only screen and (max-width : 430px) {
+    .about-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 22vh;
+    }
+
+    .profilepic {
+        margin-bottom: 5vh;
+    }
+
     .fade-in-image.visible {
         width: 100vmax;
         margin-right: 360px;
