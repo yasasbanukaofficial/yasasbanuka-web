@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import '@/app/components/molecules/MainSection.css'
+import '@/app/components/common/MainSection.css'
 
 const mainSection = (props) => {
     return (
