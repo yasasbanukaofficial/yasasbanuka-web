@@ -41,7 +41,7 @@ const About = () => {
             />
             <div className='about-content'>
                 <MainSection title='About Me' />
-                <MainSection description='Hi, I’m Yasas Banuka. As a student, I am currently studying Computer Science. I also have a passion to discover various paths on how to interact with technology' />
+                <MainSection description='Hi, I’m Yasas Banuka. As a student, I am currently studying Computer Science. I also have a passion to discover various paths on how to interact with technology.' />
             </div>
         </div>
     );
