@@ -27,6 +27,43 @@
     opacity: 0.5;
 }
 
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+.profilepic {
+    z-index: 2;
+    width: 50vh;
+    border-radius: 40px;
+    opacity: 0.4;
+    position: relative;
+}
+
+@media only screen and (max-width: 965px) {
+    .profilepic {
+        width: 40vh;
+    }
+
+}
+
+@media only screen and (max-width: 840px) {
+    .about-content {
+        display: block;
+    }
+
+    .fade-container {
+        height: 110vh;
+    }
+
+    .profilepic {
+        margin-top: 20vh;
+        width: 30vh;
+    }
+}
+
 @media only screen and (max-width : 420px) {
     .fade-in-image.visible {
         width: 100vmax;

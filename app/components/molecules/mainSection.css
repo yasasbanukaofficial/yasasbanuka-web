@@ -1,6 +1,11 @@
 #card1 {
     width: 40vw;
-    margin-right: 36vw;
+    height: 8vh;
+    padding: 0px;
+    margin-right: 10vw;
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
 }
 
 .title {
@@ -15,7 +20,18 @@
     font-family: "Barlow Condensed", sans-serif;
     font-size: 5vh;
     font-weight: 500;
+    margin: 0;
     font-style: normal;
+}
+
+@media only screen and (max-width: 965px) {
+    #card1 {
+        margin-left: 2vw;
+    }
+
+    .description {
+        font-size: 4.5vh;
+    }
 }
 
 @media only screen and (max-width : 820px) {
@@ -25,12 +41,13 @@
     }
 
     .title {
-        font-size: 8vh;
+        font-size: 6vh;
+        margin-top: 50px;
     }
 
     .description {
         width: 60vw;
-        font-size: 4vh;
+        font-size: 3.5vh;
     }
 }
 

@@ -40,8 +40,15 @@ const About = () => {
                 ref={imageRef}
             />
             <div className='about-content'>
-                <MainSection title='About Me' />
-                <MainSection description='Hi, I’m Yasas Banuka. As a student, I am currently studying Computer Science. I also have a passion to discover various paths on how to interact with technology.' />
+                <div className='info'>
+                    <MainSection title='About Me' />
+                    <MainSection description='Hi, I’m Yasas Banuka.' />
+                    <MainSection description='As a student, I am currently studying Computer Science. I also have a passion to discover various paths on how to interact with technology.' />
+                </div>
+                <img
+                    src='/profilepic.jpg'
+                    className='profilepic'
+                />
             </div>
         </div>
     );
