@@ -3,7 +3,7 @@ import Image from 'next/image';
 import '@/app/components/organisms/Hero.css'
 import Mainlogo from '@/public/MainLogo.png'
 import Navbar from '../molecules/Navbar';
-import Letsconnectbutton from '../atoms/letsconnectbutton';
+import Letsconnectbutton from '../atoms/Letsconnectbutton';
 
 const hero = () => {
     return (
