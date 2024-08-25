@@ -1,7 +1,7 @@
 'use client'
 import { useEffect, useRef, useState } from 'react';
 import '@/app/components/templates/About.css';
-import MainSection from '../molecules/MainSection';
+import MainSection from '@/app/components/molecules/MainSection';
 const About = () => {
     const [isVisible, setIsVisible] = useState(false);
     const imageRef = useRef(null);
