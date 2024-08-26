@@ -7,8 +7,8 @@ const nextConfig = {
     output: 'export',
 
     // Set the basePath and assetPrefix for GitHub Pages
-    basePath: isProd ? '/your-repository-name' : '',
-    assetPrefix: isProd ? '/your-repository-name/' : '',
+    basePath: isProd ? '/yasasbanukaofficial' : '',
+    assetPrefix: isProd ? '/yasasbanukaofficial/' : '',
 
     // Optional: Change links `/me` -> `/me/` and emit `/me.html` -> `/me/index.html`
     trailingSlash: true,

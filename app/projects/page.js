@@ -7,7 +7,7 @@ const page = () => {
         <div id='projects'>
             <Navbar />
             <img
-                src="./itachi.gif"
+                src="/itachi.gif"
                 alt="itachi-background"
                 className='itachi'
             />

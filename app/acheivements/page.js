@@ -7,7 +7,7 @@ const page = () => {
         <div id='projects'>
             <Navbar />
             <img
-                src="./dragonball.gif"
+                src="/dragonball.gif"
                 alt="itachigif"
                 className='dragonball'
             />
