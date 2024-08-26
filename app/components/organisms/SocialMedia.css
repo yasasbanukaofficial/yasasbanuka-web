@@ -1,0 +1,45 @@
+.social-links {
+    font-size: 4vh;
+    font-family: "Barlow Condensed", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    z-index: 2;
+    width: auto;
+    position: relative;
+    opacity: 0.9;
+    transition: font-size 0.15s;
+}
+
+.social-links:hover {
+    font-size: 4.5vh;
+    opacity: 1;
+    font-weight: 700;
+}
+
+.socialMediaSection {
+    display: flex;
+    flex-direction: column;
+    gap: 1vh;
+}
+
+@media only screen and (max-width : 820px) {
+    .social-links {
+        font-size: 3.5vh;
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width: 428px) {
+    .socialMediaSection {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-right: 10px;
+        gap: 0.5vh;
+    }
+
+    .social-links {
+        font-size: 2.8vh;
+        margin-top: 100px;
+    }
+}

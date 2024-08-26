@@ -27,6 +27,10 @@
     opacity: 0.5;
 }
 
+.socials {
+    margin-top: 40vh;
+    display: block;
+}
 
 .about-content {
     display: flex;
@@ -38,22 +42,22 @@
     z-index: 2;
     width: 50vh;
     height: auto;
+    margin-top: 7vh;
     border-radius: 40px;
-    opacity: 0.9;
+    opacity: 0.95;
     position: relative;
 }
 
 @media only screen and (max-width: 965px) {
     .profilepic {
         width: 40vh;
+        margin-top: 0;
     }
-
-
-
 }
 
 @media only screen and (max-width: 840px) {
     .about-content {
+        margin-top: 28vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -66,22 +70,33 @@
     }
 
     .profilepic {
-        margin-top: 20vh;
-        width: 30vh;
+        margin-bottom: 31vh;
+        margin-top: -7.5vh;
+        height: 27vh;
+        width: auto;
     }
 }
 
 @media only screen and (max-width : 430px) {
     .about-content {
+        margin-top: 20vh;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 22vh;
+        gap: 20vh;
     }
 
     .profilepic {
-        margin-bottom: 5vh;
+        margin-bottom: 24vh;
+        margin-top: -20vh;
+        height: 23vh;
+        width: auto;
+
+    }
+
+    .socials {
+        margin-top: 50vh;
     }
 
     .fade-in-image.visible {

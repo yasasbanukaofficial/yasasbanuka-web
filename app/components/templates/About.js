@@ -5,6 +5,7 @@ import DemonSlayer from '@/public/demonslayergif.gif'
 import ProfilePic from '@/public/profilepic.jpg'
 import '@/app/components/templates/About.css';
 import MainSection from '@/app/components/common/MainSection';
+import Socialmedia from '../organisms/SocialMedia';
 const About = () => {
     const [isVisible, setIsVisible] = useState(false);
     const imageRef = useRef(null);
@@ -35,24 +36,30 @@ const About = () => {
 
     return (
         <div className="fade-container">
-            <Image
-                src={DemonSlayer}
-                alt="Fade-in Image"
-                className={`fade-in-image ${isVisible ? 'visible' : ''}`}
-                ref={imageRef}
-                priority
-            />
-            <div className='about-content'>
-                <div className='info'>
-                    <MainSection title='About Me' />
-                    <MainSection description='Hi, I’m Yasas Banuka.' />
-                    <MainSection description='As a student, I am currently studying Computer Science. I also have a passion to discover various paths on how to interact with technology.' />
-                </div>
+            <div className='aboutme-info'>
                 <Image
-                    src={ProfilePic}
-                    className='profilepic'
+                    src={DemonSlayer}
+                    alt="Fade-in Image"
+                    className={`fade-in-image ${isVisible ? 'visible' : ''}`}
+                    ref={imageRef}
                     priority
                 />
+                <div className='about-content'>
+                    <div className='info'>
+                        <MainSection title='About Me' />
+                        <MainSection description='Hi, I’m Yasas Banuka.' />
+                        <MainSection description='As a student studying Computer Science, I enjoy the process of learning and solving problems. I work on personal projects, so feel free to explore my work.' />
+                        <div className='socials'>
+                            <Socialmedia />
+                        </div>
+                    </div>
+                    <Image
+                        src={ProfilePic}
+                        className='profilepic'
+                        priority
+                    />
+
+                </div>
             </div>
         </div>
     );
