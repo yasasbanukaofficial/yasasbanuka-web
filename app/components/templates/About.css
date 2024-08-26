@@ -48,14 +48,14 @@
     position: relative;
 }
 
-@media only screen and (max-width: 965px) {
+@media only screen and (max-width: 1024px) {
     .profilepic {
         width: 40vh;
         margin-top: 0;
     }
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 1080px) {
     .about-content {
         margin-top: 28vh;
         display: flex;
@@ -88,9 +88,9 @@
     }
 
     .profilepic {
-        margin-bottom: 24vh;
+        margin-bottom: 29vh;
         margin-top: -20vh;
-        height: 23vh;
+        height: 24.5vh;
         width: auto;
 
     }
