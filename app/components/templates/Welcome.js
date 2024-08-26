@@ -7,7 +7,7 @@ const Welcome = () => {
     return (
         <div className='videoContainer'>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-            <video muted autoPlay className='videoplayer'>
+            <video muted playsInline autoPlay className='videoplayer'>
                 <source src="/yasasbanuka-web/effect2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
