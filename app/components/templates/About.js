@@ -1,6 +1,8 @@
 'use client'
 import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import DemonSlayer from '@/public/demonslayergif.gif'
+import ProfilePic from '@/public/profilepic.jpg'
 import '@/app/components/templates/About.css';
 import MainSection from '@/app/components/common/MainSection';
 const About = () => {
@@ -34,7 +36,7 @@ const About = () => {
     return (
         <div className="fade-container">
             <Image
-                src="/yasasbanuka-web/demonslayergif.gif"
+                src={DemonSlayer}
                 alt="Fade-in Image"
                 className={`fade-in-image ${isVisible ? 'visible' : ''}`}
                 ref={imageRef}
@@ -46,7 +48,7 @@ const About = () => {
                     <MainSection description='As a student, I am currently studying Computer Science. I also have a passion to discover various paths on how to interact with technology.' />
                 </div>
                 <Image
-                    src='/yasasbanuka-web/profilepic.jpg'
+                    src={ProfilePic}
                     className='profilepic'
                 />
             </div>

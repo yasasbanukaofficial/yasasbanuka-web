@@ -37,6 +37,7 @@
 .profilepic {
     z-index: 2;
     width: 50vh;
+    height: auto;
     border-radius: 40px;
     opacity: 0.9;
     position: relative;
