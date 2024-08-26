@@ -40,6 +40,7 @@ const About = () => {
                 alt="Fade-in Image"
                 className={`fade-in-image ${isVisible ? 'visible' : ''}`}
                 ref={imageRef}
+                priority
             />
             <div className='about-content'>
                 <div className='info'>
@@ -50,6 +51,7 @@ const About = () => {
                 <Image
                     src={ProfilePic}
                     className='profilepic'
+                    priority
                 />
             </div>
         </div>

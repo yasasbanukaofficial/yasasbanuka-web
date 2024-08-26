@@ -12,6 +12,7 @@ const page = () => {
                 src={DragonBallGif}
                 alt="dragonball-background"
                 className='dragonball'
+                priority
             />
         </div>
     )

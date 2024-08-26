@@ -12,6 +12,7 @@ const page = () => {
                 src={ItachiGif}
                 alt="itachi-background"
                 className='itachi'
+                priority
             />
         </div>
     )
