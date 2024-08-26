@@ -1,13 +1,47 @@
-import React from 'react';
+'use client'
+import React, { useEffect } from 'react';
 import styles from './Welcome.css';
 import Hero from '@/app/components/organisms/Hero'
 
 
 const Welcome = () => {
+
+    useEffect(() => {
+        const video = document.querySelector('.videoplayer');
+
+        if (video) {
+            const handlePlay = () => {
+                video.style.display = 'block'; // Show video when it starts playing
+            };
+
+            const handleError = () => {
+                video.style.display = 'none'; // Hide video if there is an error
+            };
+
+            // Event listeners
+            video.addEventListener('play', handlePlay);
+            video.addEventListener('error', handleError);
+
+            // Check if the video is already ready to play
+            if (video.readyState === 4) { // HAVE_ENOUGH_DATA
+                video.style.display = video.paused ? 'none' : 'block';
+            } else {
+                video.style.display = 'none'; // Hide if not ready
+            }
+
+            // Cleanup event listeners
+            return () => {
+                video.removeEventListener('play', handlePlay);
+                video.removeEventListener('error', handleError);
+            };
+        }
+    }, []);
+
+
     return (
         <div className='videoContainer'>
             <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-            <video muted playsInline preload='none' autoPlay className='videoplayer'>
+            <video muted playsInline preload='auto' autoPlay className='videoplayer'>
                 <source src="/yasasbanuka-web/effect2.mp4" type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
