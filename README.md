@@ -1,5 +1,5 @@
 
-# V2 Personal Portfolio - Yasas Banuka 
+# Personal Portfolio - Yasas Banuka V2 
 
 This is a just a another version of my personal portfolio and it was been created with the theme on anime as you can see through the link 
 https://yasasbanukaofficial.github.io/yasasbanuka-web/
